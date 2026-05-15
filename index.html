@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Deals - Best AI Writing Tools & Exclusive Discounts 2026</title>
+    <meta name="description" content="Discover the best AI writing tools with exclusive promo codes and discounts. Compare Rytr, Jasper, Copy.ai and more. Save up to 50% on AI content creation tools.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0f0f1a',
+                        darker: '#08080f',
+                        accent: '#00d4aa',
+                        'accent-glow': '#00f5c4',
+                        purple: '#7c3aed',
+                        'purple-glow': '#a78bfa',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --dark: #0f0f1a;
+            --darker: #08080f;
+            --accent: #00d4aa;
+            --accent-glow: #00f5c4;
+            --purple: #7c3aed;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--darker);
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        /* Particle Background */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 50%;
+            opacity: 0.4;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); opacity: 0.4; }
+            25% { transform: translateY(-100px) translateX(50px); opacity: 0.8; }
+            50% { transform: translateY(-50px) translateX(-30px); opacity: 0.3; }
+            75% { transform: translateY(-150px) translateX(20px); opacity: 0.6; }
+        }
+
+        /* Navigation */
+        .nav-glass {
+            background: rgba(15, 15, 26, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 212, 170, 0.1);
+        }
+
+        /* Hero Section */
+        .hero-gradient {
+            background: radial-gradient(ellipse at 50% 0%, rgba(0, 212, 170, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
+        }
+
+        /* Glow Effects */
+        .glow-accent {
+            box-shadow: 0 0 30px rgba(0, 212, 170, 0.3), 0 0 60px rgba(0, 212, 170, 0.1);
+        }
+
+        .glow-purple {
+            box-shadow: 0 0 30px rgba(124, 58, 237, 0.3), 0 0 60px rgba(124, 58, 237, 0.1);
+        }
+
+        .glow-hover:hover {
+            box-shadow: 0 0 40px rgba(0, 212, 170, 0.4), 0 0 80px rgba(0, 212, 170, 0.15);
+        }
+
+        /* Card Styles */
+        .tool-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 212, 170, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 212, 170, 0.15), 0 0 60px rgba(0, 212, 170, 0.1);
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), #00b894);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 212, 170, 0.5);
+        }
+
+        .btn-secondary {
+            border: 2px solid rgba(0, 212, 170, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 212, 170, 0.1);
+            border-color: var(--accent);
+            box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+
+        /* Scroll Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Comparison Table */
+        .compare-table th {
+            background: rgba(0, 212, 170, 0.1);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .compare-table td {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .compare-table tr:hover td {
+            background: rgba(0, 212, 170, 0.05);
+        }
+
+        /* Price Tag */
+        .price-tag {
+            background: linear-gradient(135deg, rgba(0, 212, 170, 0.2), rgba(124, 58, 237, 0.2));
+            border: 1px solid rgba(0, 212, 170, 0.3);
+        }
+
+        /* Rating Stars */
+        .star-filled {
+            color: #fbbf24;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--darker);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 4px;
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent), var(--purple-glow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Section Divider */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-glass fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="zap" class="w-8 h-8 text-accent"></i>
+                    <span class="font-display font-bold text-xl text-white">AI Tool Deals</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-accent transition-colors">Home</a>
+                    <a href="#tools" class="text-gray-300 hover:text-accent transition-colors">Tools</a>
+                    <a href="#compare" class="text-gray-300 hover:text-accent transition-colors">Compare</a>
+                    <a href="#reviews" class="text-gray-300 hover:text-accent transition-colors">Reviews</a>
+                    <a href="#about" class="text-gray-300 hover:text-accent transition-colors">About</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="#tools" class="btn-primary px-6 py-2 rounded-full text-white font-medium inline-flex items-center space-x-2">
+                        <span>Get Deals</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-64 h-full bg-darker border-l border-gray-800 md:hidden z-50">
+            <div class="p-6">
+                <button id="close-menu" class="text-white mb-8">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="text-gray-300 hover:text-accent transition-colors">Home</a>
+                    <a href="#tools" class="text-gray-300 hover:text-accent transition-colors">Tools</a>
+                    <a href="#compare" class="text-gray-300 hover:text-accent transition-colors">Compare</a>
+                    <a href="#reviews" class="text-gray-300 hover:text-accent transition-colors">Reviews</a>
+                    <a href="#about" class="text-gray-300 hover:text-accent transition-colors">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center relative pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="fade-up">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-8">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-accent"></i>
+                    <span class="text-accent text-sm font-medium">2026 Updated Deals</span>
+                </div>
+                
+                <h1 class="font-display text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Discover the Best<br>
+                    <span class="gradient-text">AI Writing Tools</span>
+                </h1>
+                
+                <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                    Exclusive promo codes, honest reviews, and side-by-side comparisons. 
+                    Save up to 50% on the top AI content creation tools.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#tools" class="btn-primary px-8 py-4 rounded-full text-white font-semibold text-lg inline-flex items-center space-x-2">
+                        <span>Explore Deals</span>
+                        <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#compare" class="btn-secondary px-8 py-4 rounded-full text-white font-semibold text-lg">
+                        Compare Tools
+                    </a>
+                </div>
+
+                <div class="mt-16 flex items-center justify-center space-x-8 text-gray-500">
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                        <span>Verified Deals</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="shield" class="w-5 h-5 text-accent"></i>
+                        <span>Honest Reviews</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="trending-up" class="w-5 h-5 text-accent"></i>
+                        <span>Updated Weekly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools Section -->
+    <section id="tools" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+                    Featured <span class="gradient-text">AI Tools</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Hand-picked writing tools with exclusive discounts and verified promo codes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Rytr Card -->
+                <div class="tool-card rounded-2xl p-6 fade-up">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">R</span>
+                        </div>
+                        <div class="price-tag px-3 py-1 rounded-full">
+                            <span class="text-accent text-sm font-semibold">30% OFF</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="font-display text-2xl font-bold text-white mb-2">Rytr</h3>
+                    <div class="flex items-center space-x-1 mb-3">
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star-half" class="w-4 h-4 star-filled fill-current"></i>
+                        <span class="text-gray-400 text-sm ml-2">4.5/5</span>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-4">The most affordable AI writer. 30+ use cases, 20+ tones, 30+ languages. Perfect for beginners.</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <span class="text-gray-500 text-sm">From</span>
+                            <span class="text-white text-2xl font-bold">$9</span>
+                            <span class="text-gray-500">/mo</span>
+                        </div>
+                        <span class="text-gray-500 text-sm">Free plan: 10k chars</span>
+                    </div>
+                    
+                    <a href="https://rytr.me/?via=ehongon" target="_blank" rel="noopener noreferrer" class="btn-primary w-full py-3 rounded-xl text-white font-semibold text-center inline-flex items-center justify-center space-x-2">
+                        <span>Get Rytr Deal</span>
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Jasper Card -->
+                <div class="tool-card rounded-2xl p-6 fade-up">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">J</span>
+                        </div>
+                        <div class="price-tag px-3 py-1 rounded-full">
+                            <span class="text-accent text-sm font-semibold">25% OFF</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="font-display text-2xl font-bold text-white mb-2">Jasper</h3>
+                    <div class="flex items-center space-x-1 mb-3">
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <span class="text-gray-400 text-sm ml-2">4.8/5</span>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-4">Enterprise-grade AI writer with brand voice customization. Best for teams and agencies.</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <span class="text-gray-500 text-sm">From</span>
+                            <span class="text-white text-2xl font-bold">$49</span>
+                            <span class="text-gray-500">/mo</span>
+                        </div>
+                        <span class="text-gray-500 text-sm">7-day free trial</span>
+                    </div>
+                    
+                    <a href="#" class="btn-secondary w-full py-3 rounded-xl text-white font-semibold text-center inline-flex items-center justify-center space-x-2">
+                        <span>Coming Soon</span>
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Copy.ai Card -->
+                <div class="tool-card rounded-2xl p-6 fade-up">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-600 to-pink-800 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">C</span>
+                        </div>
+                        <div class="price-tag px-3 py-1 rounded-full">
+                            <span class="text-accent text-sm font-semibold">20% OFF</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="font-display text-2xl font-bold text-white mb-2">Copy.ai</h3>
+                    <div class="flex items-center space-x-1 mb-3">
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 star-filled fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-gray-600"></i>
+                        <span class="text-gray-400 text-sm ml-2">4.2/5</span>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-4">Powerful copywriting AI with 90+ templates. Great for ads, emails, and social media.</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <span class="text-gray-500 text-sm">From</span>
+                            <span class="text-white text-2xl font-bold">$36</span>
+                            <span class="text-gray-500">/mo</span>
+                        </div>
+                        <span class="text-gray-500 text-sm">Free plan available</span>
+                    </div>
+                    
+                    <a href="#" class="btn-secondary w-full py-3 rounded-xl text-white font-semibold text-center inline-flex items-center justify-center space-x-2">
+                        <span>Coming Soon</span>
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-4xl mx-auto"></div>
+
+    <!-- Comparison Section -->
+    <section id="compare" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+                    Side-by-Side <span class="gradient-text">Comparison</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Compare features, pricing, and ratings to find your perfect AI writing tool.
+                </p>
+            </div>
+
+            <div class="overflow-x-auto fade-up">
+                <table class="compare-table w-full text-left">
+                    <thead>
+                        <tr>
+                            <th class="p-4 rounded-tl-xl text-white font-semibold">Feature</th>
+                            <th class="p-4 text-white font-semibold text-center">
+                                <div class="flex flex-col items-center">
+                                    <span class="text-lg">Rytr</span>
+                                    <span class="text-accent text-sm">Best Budget</span>
+                                </div>
+                            </th>
+                            <th class="p-4 text-white font-semibold text-center">
+                                <div class="flex flex-col items-center">
+                                    <span class="text-lg">Jasper</span>
+                                    <span class="text-purple-glow text-sm">Best for Teams</span>
+                                </div>
+                            </th>
+                            <th class="p-4 rounded-tr-xl text-white font-semibold text-center">
+                                <div class="flex flex-col items-center">
+                                    <span class="text-lg">Copy.ai</span>
+                                    <span class="text-pink-400 text-sm">Best for Copy</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr>
+                            <td class="p-4 font-medium">Starting Price</td>
+                            <td class="p-4 text-center">
+                                <span class="text-accent font-bold">$9/mo</span>
+                            </td>
+                            <td class="p-4 text-center">$49/mo</td>
+                            <td class="p-4 text-center">$36/mo</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium">Free Plan</td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                                <span class="text-sm">10k chars</span>
+                            </td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                                <span class="text-sm">7 days</span>
+                            </td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                                <span class="text-sm">Limited</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium">Templates</td>
+                            <td class="p-4 text-center">30+</td>
+                            <td class="p-4 text-center">50+</td>
+                            <td class="p-4 text-center">90+</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium">Languages</td>
+                            <td class="p-4 text-center">
+                                <span class="text-accent font-bold">30+</span>
+                            </td>
+                            <td class="p-4 text-center">25+</td>
+                            <td class="p-4 text-center">25+</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium">Plagiarism Check</td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                            </td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                            </td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="x" class="w-5 h-5 text-gray-600 mx-auto"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium">Chrome Extension</td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                            </td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                            </td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium">Team Features</td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="x" class="w-5 h-5 text-gray-600 mx-auto"></i>
+                            </td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                                <span class="text-sm">Advanced</span>
+                            </td>
+                            <td class="p-4 text-center">
+                                <i data-lucide="check" class="w-5 h-5 text-accent mx-auto"></i>
+                                <span class="text-sm">Basic</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium">Rating</td>
+                            <td class="p-4 text-center">
+                                <span class="text-accent font-bold">4.5/5</span>
+                            </td>
+                            <td class="p-4 text-center">
+                                <span class="text-accent font-bold">4.8/5</span>
+                            </td>
+                            <td class="p-4 text-center">4.2/5</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium rounded-bl-xl">Best For</td>
+                            <td class="p-4 text-center text-sm">Beginners</td>
+                            <td class="p-4 text-center text-sm">Teams</td>
+                            <td class="p-4 text-center text-sm rounded-br-xl">Copywriters</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-4xl mx-auto"></div>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+                    Latest <span class="gradient-text">Reviews</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    In-depth reviews and tutorials to help you choose the right tool.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Rytr Review -->
+                <article class="tool-card rounded-2xl overflow-hidden fade-up">
+                    <div class="h-48 bg-gradient-to-br from-purple-900/50 to-darker flex items-center justify-center">
+                        <span class="font-display text-6xl font-bold text-purple-400">Rytr</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-3">
+                            <span class="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm">Review</span>
+                            <span class="text-gray-500 text-sm">May 15, 2026</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-2">Rytr Review 2026: Is It Still Worth It?</h3>
+                        <p class="text-gray-400 mb-4">We tested Rytr extensively to see if it remains the best budget AI writing tool. Our verdict: unbeatable value at $9/mo...</p>
+                        <a href="https://rytr.me/?via=ehongon" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-glow font-medium inline-flex items-center space-x-1 transition-colors">
+                            <span>Read Review & Get Deal</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Best Tools Article -->
+                <article class="tool-card rounded-2xl overflow-hidden fade-up">
+                    <div class="h-48 bg-gradient-to-br from-blue-900/50 to-darker flex items-center justify-center">
+                        <span class="font-display text-4xl font-bold text-blue-400">Top 5 AI Writers</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-3">
+                            <span class="px-3 py-1 rounded-full bg-purple/10 text-purple-glow text-sm">Comparison</span>
+                            <span class="text-gray-500 text-sm">May 15, 2026</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white mb-2">5 Best AI Writing Tools in 2026 (Tested & Compared)</h3>
+                        <p class="text-gray-400 mb-4">We tested the top AI writing tools to find the best options for every budget. See which tool wins in 2026...</p>
+                        <a href="#compare" class="text-accent hover:text-accent-glow font-medium inline-flex items-center space-x-1 transition-colors">
+                            <span>Read Comparison</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-4xl mx-auto"></div>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-up">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">
+                        About <span class="gradient-text">AI Tool Deals</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-6">
+                        AI Tool Deals was created to help professionals and businesses discover the best AI writing tools 
+                        at the best prices. We negotiate exclusive discounts and thoroughly test every tool we recommend.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-6">
+                        Our mission is simple: save you time and money while helping you find the perfect AI writing assistant 
+                        for your needs.
+                    </p>
+                    
+                    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+                        <h3 class="font-display text-xl font-bold text-white mb-4">About the Founder</h3>
+                        <p class="text-gray-400">
+                            I am a seasoned C-suite executive with extensive leadership experience across multiple Fortune 500 companies, 
+                            having served as CIO, COO, and CEO. My expertise spans product management, digital transformation, 
+                            digital marketing, corporate strategy, and executive training. I am a frequent speaker at industry events, 
+                            sharing insights on technology-driven business growth and innovation.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="fade-up">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="tool-card rounded-2xl p-6 text-center">
+                            <i data-lucide="check-circle" class="w-10 h-10 text-accent mx-auto mb-3"></i>
+                            <h4 class="font-display text-2xl font-bold text-white mb-1">Verified</h4>
+                            <p class="text-gray-400 text-sm">All deals manually verified</p>
+                        </div>
+                        <div class="tool-card rounded-2xl p-6 text-center">
+                            <i data-lucide="shield" class="w-10 h-10 text-accent mx-auto mb-3"></i>
+                            <h4 class="font-display text-2xl font-bold text-white mb-1">Honest</h4>
+                            <p class="text-gray-400 text-sm">Unbiased reviews always</p>
+                        </div>
+                        <div class="tool-card rounded-2xl p-6 text-center">
+                            <i data-lucide="zap" class="w-10 h-10 text-accent mx-auto mb-3"></i>
+                            <h4 class="font-display text-2xl font-bold text-white mb-1">Updated</h4>
+                            <p class="text-gray-400 text-sm">Weekly deal updates</p>
+                        </div>
+                        <div class="tool-card rounded-2xl p-6 text-center">
+                            <i data-lucide="heart" class="w-10 h-10 text-accent mx-auto mb-3"></i>
+                            <h4 class="font-display text-2xl font-bold text-white mb-1">Free</h4>
+                            <p class="text-gray-400 text-sm">No cost to use our deals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-up">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">
+                    Ready to <span class="gradient-text">Save Money?</span>
+                </h2>
+                <p class="text-gray-400 text-xl mb-10 max-w-2xl mx-auto">
+                    Start with Rytr — the best budget AI writing tool. Get 30% off with our exclusive link.
+                </p>
+                <a href="https://rytr.me/?via=ehongon" target="_blank" rel="noopener noreferrer" class="btn-primary px-10 py-5 rounded-full text-white font-bold text-xl inline-flex items-center space-x-3 glow-accent">
+                    <span>Get Rytr 30% Off</span>
+                    <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                </a>
+                <p class="text-gray-500 mt-4 text-sm">Free plan available. No credit card required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="zap" class="w-6 h-6 text-accent"></i>
+                        <span class="font-display font-bold text-lg text-white">AI Tool Deals</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Your trusted source for AI writing tool reviews and exclusive discounts.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-semibold text-white mb-4">Tools</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#tools" class="hover:text-accent transition-colors">Rytr</a></li>
+                        <li><a href="#tools" class="hover:text-accent transition-colors">Jasper</a></li>
+                        <li><a href="#tools" class="hover:text-accent transition-colors">Copy.ai</a></li>
+                        <li><a href="#tools" class="hover:text-accent transition-colors">Grammarly</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-semibold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#compare" class="hover:text-accent transition-colors">Compare Tools</a></li>
+                        <li><a href="#reviews" class="hover:text-accent transition-colors">Reviews</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-accent transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between">
+                <p class="text-gray-500 text-sm">
+                    © 2026 AI Tool Deals. All rights reserved.
+                </p>
+                <p class="text-gray-600 text-sm mt-2 md:mt-0">
+                    This site contains affiliate links. We may earn a commission at no extra cost to you.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Particle System
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    mobileMenu.classList.remove('open');
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                nav.style.background = 'rgba(15, 15, 26, 0.95)';
+            } else {
+                nav.style.background = 'rgba(15, 15, 26, 0.85)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
